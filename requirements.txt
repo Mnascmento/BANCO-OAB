@@ -1,0 +1,14 @@
+Faker
+psycopg2
+python-dotenv
+pytest
+pytest-cov
+sphinx
+sphinxcontrib-napoleon
+sphinx_rtd_theme
+sphinx-autodoc-typehints
+sphinxcontrib-spelling
+sphinx-pyreverse
+sphinx-copybutton
+sphinx-issues
+sphinx-notfound-page

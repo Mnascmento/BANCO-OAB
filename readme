@@ -1,0 +1,55 @@
+# 🧩 Seed do Banco de Dados – Middleware OAB
+
+Este projeto contém um script Python (`seed_postgres.py`) responsável por **popular o banco de dados PostgreSQL** do schema `middleware_oab` com dados falsos (mockados) para testes de desenvolvimento.
+
+---
+
+## 📋 Pré-requisitos
+
+Antes de rodar o script, certifique-se de ter instalado:
+
+- [Python 3.10+](https://www.python.org/downloads/)
+- [PostgreSQL 13+](https://www.postgresql.org/download/)
+- [Git](https://git-scm.com/) (opcional)
+- As bibliotecas Python abaixo:
+
+```bash
+pip install psycopg2-binary python-dotenv faker
+
+⚙️ Configuração do Banco de Dados
+
+1. Crie o banco de dados (caso ainda não exista):
+
+CREATE DATABASE middleware_oab_db;
+
+2. Crie o schema dentro do banco:
+
+CREATE SCHEMA middleware_oab;
+
+3. Execute o script sql:
+
+\i 'C:/caminho/para/o/projeto/seed_postgres.sql'
+
+🔐 Variáveis de Ambiente
+
+Crie um arquivo .env na raiz do projeto com suas credenciais do PostgreSQL:
+
+DB_USER=postgres
+DB_PASSWORD=suasenha
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=middleware_oab_db
+
+
+🚀 Executando o Script
+
+1. Abra o terminal (ou o PowerShell no Windows);
+
+2. Navegue até a pasta do projeto:
+
+cd caminho/para/BANCO-OAB-1
+
+
+3. Execute o script:
+
+python seed_postgres.py
